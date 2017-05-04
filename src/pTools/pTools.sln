@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pTools", "pTools.vcproj", "{C1B4A034-BE33-481A-9FD2-9CB5CA55A9FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1B4A034-BE33-481A-9FD2-9CB5CA55A9FB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1B4A034-BE33-481A-9FD2-9CB5CA55A9FB}.Debug|Win32.Build.0 = Debug|Win32
+		{C1B4A034-BE33-481A-9FD2-9CB5CA55A9FB}.Release|Win32.ActiveCfg = Release|Win32
+		{C1B4A034-BE33-481A-9FD2-9CB5CA55A9FB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

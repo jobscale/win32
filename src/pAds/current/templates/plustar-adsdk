@@ -1,0 +1,346 @@
+/*! Copyright(C) 2006-2011 Plustar co.,LTD All Rights Reserved. */
+/* 広告表示モジュール */
+if (typeof PSDK == "undefined") {
+    PSDK = {};
+}
+PSDK.browser = (function() {
+    var b = navigator.userAgent;
+    var a = Object.prototype.toString.call(window.opera) == "[object Opera]";
+    return {IE: !!window.attachEvent && !a,Opera: a,WebKit: b.indexOf("AppleWebKit/") > -1,Gecko: b.indexOf("Gecko") > -1 && b.indexOf("KHTML") === -1,iPad: b.indexOf("iPad") > -1,Safari: /Apple.*Safari/.test(b),MobileSafari: /Apple.*Mobile.*Safari/.test(b),IEMobile: b.indexOf("IEMobile") > -1};
+})();
+if (typeof PSDK.Util == "undefined") {
+    PSDK.Util = {};
+}
+PSDK.window = {height: 0,width: 0};
+PSDK.Util.getWindowSize = function() {
+    var a = 0;
+    if (window.innerHeight) {
+        a = window.innerHeight;
+    } else {
+        if (document.documentElement && document.documentElement.clientHeight) {
+            a = document.documentElement.clientHeight;
+        } else {
+            if (document.body) {
+                a = document.body.clientHeight;
+            }
+        }
+    }
+    var b = 0;
+    if (window.innerWidth) {
+        b = window.innerWidth;
+    } else {
+        if (document.documentElement && document.documentElement.clientWidth) {
+            b = document.documentElement.clientWidth;
+        } else {
+            if (document.body) {
+                b = document.body.clientWidth;
+            }
+        }
+    }
+    PSDK.window = {height: a,width: b};
+    return PSDK.window;
+};
+PSDK.Util.pAdsInit = function(pslab_a) {
+    setTimeout(function() {
+        if (!pslab_a) {
+            pslab_a = {};
+        }
+        if (pslab_a.before) {
+            pslab_a.before();
+        }
+        window.scrollTo(0, 1);
+        if (pslab_a.after) {
+            pslab_a.after();
+        }
+    }, 0);
+};
+PSDK.Util.closePlustarAds  = function(){
+    var pslab_s = "plustar_ad_frame";
+    var pslab_j = pslab$("#" + pslab_s);
+    var divHeight = 90;
+    /* 「×」を押したデータ送信を行う */
+    var b = PSDK.Util.getWindowSize();
+
+    pslab$.ajax({
+        type: "POST",
+        url: "http://x.plustar.jp/ac.php",
+        data: {
+          "h": b.height,
+          "w": b.width,
+          "m": "%%MAC_ADDRESS%%"
+        },
+        dataType: "jsonp",
+        timeout:1000,
+        cache: false,
+        success: function(data, status, xhr) {
+        },
+        error: function(xhr, status, err) {
+        }
+    });
+
+    setTimeout(function(){
+          pslab$(pslab_j).fadeOut(1500,function(){
+              pslab$(pslab_j).remove();
+          });
+    },700);
+};
+(pslab_func = function(pslab_a) {
+    var c = {interval: 100,start: null,run: null,end: null};
+    var d = function(e) {
+        return {x: e.scrollLeft(),y: e.scrollTop()};
+    };
+    var b = function(h, g) {
+        this.s = pslab_a.extend({}, c, g, {target: h});
+        var f = {};
+        if (this.s.end) {
+            f[0] = this.s.end;
+        }
+        if (this.s.start) {
+            f[1] = this.s.start;
+        }
+        if (this.s.run) {
+            f[2] = this.s.run;
+        }
+        this.s.cb = f;
+        this.a = {};
+        this.a.active = false;
+        this.a.status = 0;
+        this.a.state = {direction: {x: false,y: false},oScroll: {x: 0,y: 0},cScroll: {x: 0,y: 0}};
+        this.c = {};
+        this.c.ct = null;
+        var e = this;
+        this.cb = function() {
+            var i = e.s.cb[e.a.status];
+            if (i) {
+                i(e, e.a.state);
+            }
+        };
+        this.isRunning = function() {
+            if (e.a.status < 2) {
+                e.a.status++;
+            }
+            var k = d(e.s.target);
+            var j = (k.x != e.a.state.cScroll.x);
+            var i = (k.y != e.a.state.cScroll.y);
+            e.a.state.direction.x = j;
+            e.a.state.direction.y = i;
+            e.a.state.oScroll.x = e.a.state.cScroll.x;
+            e.a.state.oScroll.y = e.a.state.cScroll.y;
+            e.a.state.cScroll.x = k.x;
+            e.a.state.cScroll.y = k.y;
+            if (j || i) {
+                e.cb();
+                e.c.ct = setTimeout(e.isRunning, e.s.interval);
+            } else {
+                clearTimeout(e.c.ct);
+                e.a.status = 0;
+                e.cb();
+                e.a.active = false;
+            }
+        };
+        h.scroll(function(i) {
+            if (e.a.active) {
+                return;
+            }
+            e.isRunning();
+            e.c.ct = setTimeout(e.isRunning, e.s.interval);
+        });
+    };
+    pslab_a.fn.exScroll = function(e) {
+        new b(this, e);
+        return this;
+    };
+})(psQuery);
+if (typeof PADS == "undefined") {
+    PADS = {};
+}
+if (typeof PADS.Ad == "undefined") {
+    PADS.Ad = {};
+}
+PADS.Ad.createAdFrame = function(c) {
+    var a = pslab$("<iframe></iframe>");
+    a.attr("src", c.src);
+    a.attr("width", c.width);
+    a.attr("height", c.height);
+    a.attr("scrolling", "no");
+    a.attr("frameborder", "0");
+    return a;
+};
+if (typeof PSDK.Ad == "undefined") {
+    PSDK.Ad = {};
+}
+PSDK.Ad.status = false;
+PSDK.Ad.plustar_adframe = function() {
+    var pslab_s = "plustar_ad_frame";
+    var pslab_j = pslab$("#" + pslab_s);
+    var pslab_p = pslab$("ifeame", pslab_j);
+    var pslab_t = pslab$(window);
+    var pslab_q = pslab$("");
+    var pslab_a = 0;
+    var pslab_d = false;
+    var pslab_r = false;
+    var pslab_o;
+    var n = 0;
+    var pslab_f = 110;
+    var pslab_l = 0;
+    var pslab_k = null;
+    var pslab_m = function(u) {
+    var pslab_b = PSDK.Util.getWindowSize();
+    pslab_o = pslab_b.height - pslab_f;
+        if (u) {
+            pslab_o += u;
+        }
+    };
+    var pslab_c = function() {
+        var b = pslab_l;
+        if (pslab_r && pslab_l >= n) {
+            b += pslab_o;
+
+            var obj = this;
+            if (obj == window) {
+                scrollHeight = pslab$(document).height();
+            }
+            else {
+                scrollHeight = pslab$(obj)[0].scrollHeight;
+            }
+            var docHight = pslab$(obj).height();
+            var docWidth = pslab$(obj).width();
+            var scTop = pslab$(obj).scrollTop();
+            var scLeft = pslab$(obj).scrollLeft();
+            var scrollPosition = docHight + scTop;
+            var nowPosition = scrollHeight - scrollPosition;
+
+            display = "block";
+            if ( docHight < 200) {
+                b = 0;
+                display = "none";
+            }
+            else if( docWidth < 350)
+            {
+                b = 0;
+                display = "none";
+            }
+            else if (scrollPosition == docHight) {
+                b = docHight - 110;
+                display = "block";
+            }
+            else if ( nowPosition / scrollHeight <= 0.05) {
+                b = scTop + 5;
+                display = "block";
+            }
+            if(pslab_a == 1) {
+                b = scrollPosition - 110;
+                pslab$(pslab_j).fadeIn(1000);
+            }
+            pslab_j.css("top", b + "px").css("left", scLeft + 20 + "px").css("display", display);
+        } else {
+            pslab_j.css("display", "none");
+        }
+    };
+    var pslab_e = function() {
+        pslab_r = true;
+        if (PSDK.browser.Gecko) {
+            if (pslab_h()) {
+                pslab_m();
+                pslab_k = setTimeout(pslab_c, 150);
+            }
+        } else {
+            pslab_m();
+            pslab_k = setTimeout(pslab_c, 150);
+        }
+    };
+    var pslab_h = function() {
+        var u = document.body.scrollTop || document.documentElement.scrollTop || window.scrollTop;
+        var b = false;
+        if (u !== null) {
+            b = true;
+        }
+        return b;
+    };
+    var pslab_g = function(b) {
+        clearTimeout(pslab_k);
+        pslab_r = false;
+        pslab_c();
+        if (b) {
+            setTimeout(pslab_e, b);
+        } else {
+            pslab_e();
+        }
+    };
+    if (window.orientationchange) {
+        pslab_t.bind("orientationchange", function() {
+            pslab_g(65);
+        });
+    } else {
+        pslab_t.resize(function() {
+            if (!PSDK.Ad.status) {
+                return;
+            }
+            pslab_g();
+        });
+    }
+    pslab_q.bind("touchstart", function() {
+        if (!pslab_d) {
+            clearTimeout(pslab_k);
+            pslab_r = false;
+            pslab_c();
+        }
+    });
+    pslab_q.bind("touchend", function() {
+        if (!pslab_d) {
+            clearTimeout(pslab_k);
+            pslab_l = parseInt(pslab_t.scrollTop());
+            pslab_r = true;
+            pslab_c();
+        }
+    });
+    pslab_t.exScroll({interval: 30,
+        start: function(b, u) {
+            pslab_d = true;
+            if (pslab_a == 1) {
+                pslab_m();
+                pslab_a = 2;
+            }
+            if (pslab_a == 2) {
+                clearTimeout(pslab_k);
+                pslab_r = false;
+                pslab_c();
+            }
+        },
+        end: function(b, u) {
+            if (pslab_a == 1) {
+                pslab_m();
+                pslab_a = 2;
+            } else {
+                if (pslab_a == 2) {
+                    pslab_l = u.cScroll.y;
+                    pslab_e();
+                }
+            }
+            pslab_d = false;
+    }});
+    PSDK.Util.pAdsInit({
+    after: function() {
+        setTimeout(function(){
+            pslab_a = 1;
+            pslab_e();
+        }, parseInt(2 * 1000));
+    }});
+};
+pslab$(window).load(function() {
+    var pslab_f = {};
+    pslab_f.src = "http://pad.plustar.jp/plustar-adshow";
+    pslab_f.width = "728";
+    pslab_f.height = "90";
+    var pslab_g = PADS.Ad.createAdFrame(pslab_f);
+    var pslab_e = pslab$("<div class=\"pad_button_area\" onclick=\"return PSDK.Util.closePlustarAds();\" title=\"広告を閉じる\"></div>");
+    if(pslab$("#plustar_ad_frame") !== null)
+    {
+        pslab$("#plustar_ad_frame").append(pslab_e);
+        pslab_e.append(pslab_g);
+        PSDK.Ad.plustar_adframe();
+        PSDK.Ad.status = true;
+    }
+});
+(function() {
+})();

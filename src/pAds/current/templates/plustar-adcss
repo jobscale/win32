@@ -1,0 +1,28 @@
+div.plustar_frame_banner{
+  width: 728px;
+  z-index:9999999;
+}
+
+div#plustar_ad_frame {
+  z-index:9999999;
+  display: none;
+  position: absolute;
+  left: 10px;
+  width: 728px;
+}
+
+.opera div#plustar_ad_frame {
+  display: block;
+  bottom: 120px;
+}
+
+div#plustar_ad_frame .pad_button_area{
+  z-index:9999999;
+  height: 107px;
+  width: 16px;
+  float: left;
+  margin-top: 0px;
+  background: url('http://pad.plustar.jp/close.png') 0 0 no-repeat;
+  cursor: pointer;
+  background-position: left bottom;
+}

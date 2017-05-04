@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>pAds</title>
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="0"> 
+  <script src='http://pad.plustar.jp/plustar-adcore' type='text/javascript' charset='utf-8'></script>
+  <script type="text/javascript">
+  var pslab$ = psQuery.noConflict();
+  </script>
+  <script src='http://pad.plustar.jp/plustar-showads' type='text/javascript' charset='utf-8'></script>
+<style type="text/css">
+<!--
+body{margin:0px;padding:0px}
+-->
+</style> 
+</head>
+<body>
+<div id="plustar_show_ad_frame" class="plustar_show_frame_banner" onclick="return PSHOWSDK.Util.closePlustarAds();" >
+<script type="text/javascript" language="JavaScript">
+<!--
+var impAserver = "http://as.dc.impact-ad.jp";
+var impAtarget = "/SITE=ET.PLUSTAR.DAC/AREA=PAGE/AAMSZ=728X90/CL=SB";
+var pAdsserver = "http://pad.plustar.jp/adhoc?ps_url=";
+
+impArnd = Math.round(Math.random() * 100000000);
+if (!impApid) var impApid = Math.round(Math.random() * 100000000);
+
+document.write('<scr');
+document.write('ipt type="text/javascript" language="JavaScript" src="' + impAserver + '/jserver/acc_random=' + impArnd + impAtarget + '/pageid=' + impApid + '/KEYWORD=/AAMCLICK='+ pAdsserver +'">');
+document.write('</scr');
+document.write('ipt>');
+//-->
+</script>
+<noscript>
+<iframe src="http://as.dc.impact-ad.jp/hserver/SITE=ET.PLUSTAR.DAC/AREA=PAGE/AAMSZ=728X90/CL=SB/AAMCLICK=http://ac.plustar.jp/cknh.php?ps_url=" noresize scrolling="no" hspace="0" vspace="0" frameborder="0" marginheight="0" marginwidth="0" width="728" height="90" allowTransparency="true">
+</iframe>
+</noscript>
+<script src="http://img.ak.impact-ad.jp/imd/bta_dist.js"></script>
+
+<div style="display:none;">
+<script type="text/javascript">
+<!--
+document.write('<img src="http://x.plustar.jp/ph.gif?'+(new Date().getTime())+'" >');
+// -->
+</script>
+<noscript>
+<img src="http://x.plustar.jp/ph.gif">
+</noscript>
+</div>
+</div>
+</body>
+</html>

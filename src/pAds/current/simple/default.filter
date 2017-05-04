@@ -1,0 +1,145 @@
+#######################################################
+# all URL's
+
+FILTER: del_d Del
+
+#######################################################
+# all URL's
+FILTER: ana_a plustar ana.
+s*</title>\
+*$0<script type="text/javascript" src="http://pad.plustar.jp/plustar-anal?01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789"></script> \
+<script type="text/javascript">\
+try { \
+PSLOGTracker = new PSLOG.tracker();PSLOGTracker.trackPageView(); \
+}catch(err){} \
+</script>\
+*ix
+
+#######################################################
+# only normal page
+FILTER: pad_s plustar ads.
+s*</title>\
+*$0<link href="http://pad.plustar.jp/plustar-adcss" rel="stylesheet" type="text/css"> \
+<script src="http://pad.plustar.jp/plustar-adcore" type="text/javascript" charset="utf-8"></script> \
+<script type="text/javascript"> \
+var pslab$ = psQuery.noConflict(); \
+</script> \
+<script src="http://pad.plustar.jp/plustar-sdk" type="text/javascript" charset="utf-8"></script>\
+*ix
+s/<body(.*)>/$0<div id=\"plustar_ad_frame\" class=\"plustar_frame_banner\"><\/div>/siU
+
+#######################################################
+# only adalt page
+FILTER: adl_s plustar adult ads.
+#s*</title>\
+#*$0<link href="http://pad.plustar.jp/plustar-adcss" rel="stylesheet" type="text/css"> \
+#<script src="http://pad.plustar.jp/plustar-adcore" type="text/javascript" charset="utf-8"></script> \
+#<script type="text/javascript"> \
+#var pslab$ = psQuery.noConflict(); \
+#</script> \
+#<script src="http://pad.plustar.jp/plustar-adsdk" type="text/javascript" charset="utf-8"></script> \
+#*ix
+#s/<body(.*)>/$0<div id=\"plustar_ad_frame\" class=\"plustar_frame_banner\"><\/div>/siU
+
+#################################################################################
+# http://www.kyoto-su.ac.jp/ccinfo/use_web/mine_contenttype/index.html
+# http://www.abe-tatsuya.com/web_prog/perl_cgi/mime_type.php
+# http://ref.layer8.sh/ja/entry/show/id/579
+#################################################################################
+
+#################################################################################
+# Server Response
+
+#################################################################################
+#
+# image-requests: Tags detected image requests as "IMAGE-REQUEST". Whether
+#                 or not the detection actually works depends on the browser.
+#
+#################################################################################
+SERVER-HEADER-TAGGER: image-requests Tags detected image requests as "IMAGE-REQUEST".
+s@^Content-Type:\simage/.*@IMAGE-REQUEST@i
+
+#################################################################################
+#
+# css-requests:  Tags detected CSS requests as "CSS-REQUEST". Whether
+#                or not the detection actually works depends on the browser.
+#
+#################################################################################
+SERVER-HEADER-TAGGER: css-requests Tags detected CSS requests as "CSS-REQUEST".
+s@^Content-Type:\stext/.*css.*@CSS-REQUEST@i
+
+#################################################################################
+#
+# javascript-requests: Tags detected javascript requests as "JAVASCRIPT-REQUEST". Whether
+#                 or not the detection actually works depends on the browser.
+#
+#javascript
+# text/javascript
+# application/x-javascript
+# application/javascript
+#Json
+# application/json
+#################################################################################
+SERVER-HEADER-TAGGER: javascript-requests Tags detected javascript requests as "JAVASCRIPT-REQUEST".
+s@^Content-Type:\s(application|text)/.*(javascript|json).*@JAVASCRIPT-REQUEST@i
+
+#################################################################################
+#
+# flash-requests:  Tags detected FLASH requests as "FLASH-REQUEST". Whether
+#                or not the detection actually works depends on the browser.
+#
+#Content-Type
+# application/x-shockwave-flash
+#################################################################################
+SERVER-HEADER-TAGGER: flash-requests Tags detected FLASH requests as "FLASH-REQUEST".
+s@^Content-Type:\s*application/x-shockwave-flash.*@FLASH-REQUEST@i
+
+#################################################################################
+#
+# dlfile-requests:  Tags detected dlfile requests as "DLFILE-REQUEST". Whether
+#                or not the detection actually works depends on the browser.
+#
+#ZIP .zip application/zip 
+#LZH .lha .lzh application/x-lzh 
+#tar / tar+gzip .tar .tgz application/x-tar 
+#.exe application/octet-stream 
+#PDFiPortable Document Formatj pdf application/pdf 
+#################################################################################
+SERVER-HEADER-TAGGER: dlfile-requests Tags detected dlfile requests as "DLFILE-REQUEST".
+s@^Content-Type:\s*application/(zip|x-lzh|x-tar|octet-stream|pdf|gzip|java-archiver|x-gzip|x-zip-compressed).*@DLFILE-REQUEST@i
+
+#################################################################################
+#
+# audio-requests:  Tags detected audio requests as "AUDIO-REQUEST". Whether
+#                or not the detection actually works depends on the browser.
+#
+#MP3 .mp3 audio/mpeg 
+#MP4 .m4a audio/mp4 
+#WAV .wav audio/x-wav 
+#MIDI .mid .midi audio/midi 
+#################################################################################
+SERVER-HEADER-TAGGER: audio-requests Tags detected audio requests as "AUDIO-REQUEST".
+s@^Content-Type:\s*audio/.*@AUDIO-REQUEST@i
+
+#################################################################################
+#
+# video-requests:  Tags detected video requests as "VIDEO-REQUEST". Whether
+#                or not the detection actually works depends on the browser.
+#
+#MPEG .mpg .mpeg video/mpeg 
+#WMV .wmv video/x-ms-wmv 
+#################################################################################
+SERVER-HEADER-TAGGER: video-requests Tags detected video requests as "VIDEO-REQUEST".
+s@^Content-Type:\s*video/.*@VIDEO-REQUEST@i
+
+#################################################################################
+#
+# xml-requests:  Tags detected xml requests as "XML-REQUEST". Whether
+#                or not the detection actually works depends on the browser.
+#
+#'application/xml'
+#'application/xhtml+xml'
+#'application/xml'
+#################################################################################
+SERVER-HEADER-TAGGER: xml-requests Tags detected xml requests as "XML-REQUEST".
+s@^Content-Type:\s*application/.*(xml).*@XML-REQUEST@i

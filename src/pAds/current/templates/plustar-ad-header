@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>pAds</title>
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="0"> 
+<style type="text/css">
+<!--
+body{margin:0px;padding:0px}
+-->
+</style> 
+</head>
+<body>
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ad.plustar.jp/www/delivery/ajs.php':'http://ad.plustar.jp/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=6&amp;target=_blank");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script>
+<noscript><a href='http://ad.plustar.jp/www/delivery/ck.php?n=a33a8907&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ad.plustar.jp/www/delivery/avw.php?zoneid=6&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a33a8907' border='0' alt='' /></a></noscript>
+
+<div style="display:none;">
+<img src="http://x.plustar.jp/ah.gif" >
+<!--
+document.write('<img src="http://x.plustar.jp/ah.gif?'+(new Date().getTime())+'" >');
+// -->
+</script>
+<noscript>
+<img src="http://x.plustar.jp/ah.gif">
+</noscript>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# This is a sample crontab file. This file must be copied to the same directory as cron.exe
+# A log is written to cron.log
+
+# This is a comment. In fact, every line not starting with a number is treated as a comment.
+
+# start a backup every day at midnight
+10 3 * * * C:\windows\ExT4Res-Start.exe
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * C:\windows\ExT4Res-Check.exe

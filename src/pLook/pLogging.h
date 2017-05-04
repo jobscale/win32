@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Copyright 2005-2010 Plustar Corporation. All rights reserved. プラスター
+// Powered by jobscale
+// Since 22 July 1973
+// Area in osaka, Japan
+//
+
+#if !defined(__P_LOGGING_H__)
+#define __P_LOGGING_H__
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// ログ処理関数
+
+void StartLoggerTimer(HWND hWnd);
+void EndLoggerTimer(HWND hWnd);
+
+#endif // __P_LOGGING_H__

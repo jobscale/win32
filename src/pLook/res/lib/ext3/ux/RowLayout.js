@@ -1,0 +1,7 @@
+/*
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+Ext.ns("Ext.ux.layout");Ext.ux.layout.RowLayout=Ext.extend(Ext.layout.ContainerLayout,{monitorResize:true,type:"row",allowContainerRemove:false,isValidParent:function(b,a){return this.innerCt&&b.getPositionEl().dom.parentNode==this.innerCt.dom},getLayoutTargetSize:function(){var b=this.container.getLayoutTarget(),a;if(b){a=b.getViewSize();if(Ext.isIE&&Ext.isStrict&&a.height==0){a=b.getStyleSize()}a.width-=b.getPadding("lr");a.height-=b.getPadding("tb")}return a},renderAll:function(a,b){if(!this.innerCt){this.innerCt=b.createChild({cls:"x-column-inner"});this.innerCt.createChild({cls:"x-clear"})}Ext.layout.ColumnLayout.superclass.renderAll.call(this,a,this.innerCt)},onLayout:function(g,k){var c=g.items.items,j=c.length,a,b,d,n=[];this.renderAll(g,k);var o=this.getLayoutTargetSize();if(o.width<1&&o.height<1){return}var e=o.height,f=e;this.innerCt.setSize({height:e});for(d=0;d<j;d++){a=c[d];b=a.getPositionEl().getMargins("tb");n[d]=b;if(!a.rowHeight){f-=(a.getHeight()+b)}}f=f<0?0:f;for(d=0;d<j;d++){a=c[d];b=n[d];if(a.rowHeight){a.setSize({height:Math.floor(a.rowHeight*f)-b})}}if(Ext.isIE){if(d=k.getStyle("overflow")&&d!="hidden"&&!this.adjustmentPass){var l=this.getLayoutTargetSize();if(l.width!=o.width){this.adjustmentPass=true;this.onLayout(g,k)}}}delete this.adjustmentPass}});Ext.Container.LAYOUTS["ux.row"]=Ext.ux.layout.RowLayout;

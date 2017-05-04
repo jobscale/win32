@@ -1,0 +1,4 @@
+!ifndef ___PLUSTAR_VERSION__NSH___
+!define ___PLUSTAR_VERSION__NSH___
+!define PLUSTAR_VERSION 2755
+!endif # !___PLUSTAR_VERSION__NSH___

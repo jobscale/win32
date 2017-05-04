@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<link rel="stylesheet" type="text/css" href="lib/ext/resources/css/ext-all.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="lib/ext/resources/css/xtheme-gray.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="extrapper.css" media="screen" />
+	<link rel="shortcut icon" href="lib/favicon_ps.ico" />
+	<link rel="icon" href="lib/favicon_ps.ico" />
+	<title>Plustar: ExTrapper - 管理コンソール (%s)</title>
+</head>
+<body>
+<div id="page">
+	<div id="header">
+		<div id="logo">
+			<h1>
+				<a href="/"><img src="logo.png" width="200" height="36" alt="Plustar ExTrapper(TM)865" /></a>
+			</h1>
+		</div>
+		<div id="powered">
+			<a href="http://www.plustar.jp/"><img src="powered.png" width="146" height="42" alt="POWERED BY PLUSTAR" /></a>
+		</div>
+	</div>
+	<div id="content">
+		<div id="grid">&nbsp;</div>
+	</div>
+	<noscript>
+	<div style="color: #000;">Plustar ExtrapperはJavaScript を有効する必要があります。このブラウザでは、JavaScript が無効になっているか、サポートされていないようです。<br>
+	ブラウザのオプションを変更して JavaScript を有効にして<a href="." style="color: #f00;">もう一度試してください</a>。</div>
+	</noscript>
+	<div id="footer">
+		<script type="text/javascript">
+		<!--
+		date = new Date();
+		year = date.getYear();
+		if (year < 2000) year += 1900;
+		document.write('<p id="copyright">&#169; 2006-' + year + ' <a href="http://www.plustar.jp/">Plustar Co. Ltd.<\/a><\/p>');
+		-->
+		</script>
+	</div>
+</div>
+<div id="opt-dlg" style="visibility: hidden;">
+	<div class="x-dlg-hd">オプション</div>
+	<div class="x-dlg-bd">
+		<div class="x-dlg-tab" title="起動制御">
+			<div id="suppression-grid"></div>
+		</div>
+		<div class="x-dlg-tab" title="フィルター">
+			<div id="form-filter" class="inner-tab"></div>
+		</div>
+		<div class="x-dlg-tab" title="同期">
+			<div id="form-sync" class="inner-tab"></div>
+		</div>
+		<div class="x-dlg-tab" title="パスワード">
+			<div id="form-pwd" class="inner-tab"></div>
+		</div>
+		<div class="x-dlg-tab" title="ネット">
+			<div id="form-net" class="inner-tab"></div>
+		</div>
+		<div class="x-dlg-tab" title="その他">
+			<div id="form-misc" class="inner-tab"></div>
+		</div>
+	</div>
+</div>
+<div id="lic-dlg" style="visibility: hidden;">
+	<div class="x-dlg-hd">ライセンス情報</div>
+	<div class="x-dlg-bd">
+		<div id="lic-dlg-header"><img src="logo.png" width="200" height="36" alt="ExTrapper" /></div>
+		<div id="lic-dlg-content">
+			<h2>Plustar eXtreme tRapper Version %s (<span id="lic_version">%s</span>)</h2>
+			<p>
+				&#169; 2007 Plustar Co. Ltd.<br />
+				All rights reserved.<br />
+				Icons By <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank">famfamfam silk icons.</a><br />
+				Powered By <a href="http://extjs.com/" target="_blank">Ext JS.</a><br />
+				Powered By <a href="http://www.plustar.jp/gatekeeper/" target="_blank">Plustar ExTrapper for GateKeeper+.</a>
+			</p>
+			<div id="lic-info">
+				<p>%s</p>
+				<p>ライセンス先: <span id="lic_cname">%s</span></p>
+				<p>ライセンス数: %u</p>
+				<p>有効期限: %s (残り%s日)</p>
+				<p>サービスコード: %u</p>
+			</div>
+		</div>
+		<div id="lic-dlg-footer">
+			<p>
+				この製品は、著作権に関する法律および国際条例により保護されています。<br />
+				この製品の全部または一部を無断で複製したり、無断で複製物を頒布すると、<br />
+				著作権の侵害となりますのでご注意ください。
+			</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="lib/ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="lib/ext/ext-all.js"></script>
+<script type="text/javascript" src="lib/ext/locale/ext-lang-ja.js"></script>
+<script type="text/javascript" src="extrapper.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2267324-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pLUtils", "pUtils\pLUtils.vcproj", "{61F34FBF-3129-4038-8B41-9D45A7F9E4E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{412FFA67-58F1-49B4-91E4-7FDA874C2902} = {412FFA67-58F1-49B4-91E4-7FDA874C2902}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pTem2", "pTem2\pTem2.vcproj", "{412FFA67-58F1-49B4-91E4-7FDA874C2902}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61F34FBF-3129-4038-8B41-9D45A7F9E4E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61F34FBF-3129-4038-8B41-9D45A7F9E4E8}.Debug|Win32.Build.0 = Debug|Win32
+		{61F34FBF-3129-4038-8B41-9D45A7F9E4E8}.Release|Win32.ActiveCfg = Release|Win32
+		{61F34FBF-3129-4038-8B41-9D45A7F9E4E8}.Release|Win32.Build.0 = Release|Win32
+		{412FFA67-58F1-49B4-91E4-7FDA874C2902}.Debug|Win32.ActiveCfg = Debug|Win32
+		{412FFA67-58F1-49B4-91E4-7FDA874C2902}.Debug|Win32.Build.0 = Debug|Win32
+		{412FFA67-58F1-49B4-91E4-7FDA874C2902}.Release|Win32.ActiveCfg = Release|Win32
+		{412FFA67-58F1-49B4-91E4-7FDA874C2902}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

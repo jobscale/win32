@@ -1,0 +1,671 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<!-- base href="http://webryblog.biglobe.ne.jp/" -->
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="robots" content="index,follow">
+<meta name="robots" content="NOYDIR,NOODP">
+<meta name="description" content="jobscale blog（Powered by BIGLOBEウェブリブログ）。気まぐれでいい加減な日記です">
+<meta name="keywords" content="ブログ,ブログ 無料">
+<title>jobscale blog/ウェブリブログ</title>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://jobscale.at.webry.info/rss/index.rdf">
+<link rel="EditURI" type="application/rsd+xml" href="http://jobscale.at.webry.info/rsd/rsd.xml">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://webryblog.biglobe.ne.jp/wlw/wlwmanifest.xml">
+<script type="text/javascript" src="1.test_files/bblog.js"></script>
+<script type="text/javascript" src="1.test_files/include_logic.js"></script>
+<script type="text/javascript" src="1.test_files/index_css.js"></script>
+<script type="text/javascript" src="1.test_files/footerlink.js"></script>
+<script type="text/javascript" src="1.test_files/snsMenu.js"></script>
+<link rel="stylesheet" type="text/css" href="1.test_files/common.css">
+<link rel="alternate" media="handheld" type="application/xhtml+xml" href="http://m.webry.info/at/jobscale/index.htm">
+<script type="text/javascript">
+<!--
+  include_design_css("top");
+// -->
+</script><link href="1.test_files/char_palsystem1.css" rel="stylesheet" type="text/css"><script language="javascript" src="1.test_files/char_palsystem1.js"></script><link href="1.test_files/layout_center3col.css" rel="stylesheet" type="text/css"><link href="1.test_files/fixed.css" rel="stylesheet" type="text/css"><style type="text/css">#newcmt{  display: none;  }</style><style type="text/css">#newtbk{  display: none;  }</style><style type="text/css">#categories{  display: none;  }</style><style type="text/css">#albums{  display: none;  }</style><style type="text/css">#webryseal{  display: none;  }</style><style type="text/css">.themetabs{  display: none;  }</style>
+</head><body>
+
+	<!-- free space E07 -->
+
+<!-- main area start -->
+<div id="container">
+	<script type="text/javascript" src="1.test_files/searchengine.js"></script>
+	<script type="text/javascript" charset="Shift_JIS" src="1.test_files/searchbox.js"></script>
+
+<table id="link-bar" border="0" cellpadding="3" cellspacing="0">
+	<!--colgroup>
+	<col width="20%" />
+	<col width="50%" />
+	<col width="30%" />
+	</colgroup-->
+<script type="text/javascript">
+<!--
+  dispSpChangeButton();
+// -->
+</script>
+    <tbody><tr>
+      <td><a href="http://webryblog.biglobe.ne.jp/">ブログ ログイン</a></td>
+      <td id="linkunit" align="center">
+      <script type="text/javascript">
+      <!--
+		var firstView = true;
+		function google_ad_request_done(ads) {}
+		function google_radlink_request_done(radlinks) {
+			if (firstView) {
+				firstView = false;
+				if (radlinks.length < 1) {
+					document.write(' <a href="http://webryblog.biglobe.ne.jp/campaign/">ウェブリブログのキャンペーンに応募しよう！</a> ');
+					return;
+				}
+				document.write(" <h4><a href=\"" + google_info.feedback_url + "\" target=\"_blank\">Ads by Google</a></h4>\n");
+				for(i=0; i < radlinks.length; ++i) {
+					document.write('<a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=t&google_kw=' + radlinks[i].url_escaped_term + '&google_rt=' + radlinks[i].radlink_token + '&google_page_url=' + window.location + '">' + radlinks[i].term + '</a>\n');
+				}
+			}
+		}
+
+      // -->
+      </script>
+    <script type="text/javascript">
+      <!--
+　　　　google_ad_client = "ca-nec_radlinks_js";
+　　　　google_ad_channel = 'top';
+　　　　google_page_url = '';
+　　　　google_language = 'ja';
+　　　　google_encoding = 'sjis';
+　　　　google_ad_output = 'js';
+　　　　google_safe = 'high';
+　　　　google_num_radlinks = '3';
+　　　　google_max_radlink_len = '20';
+　　　　google_max_num_ads = '0';
+　　　　google_rl_mode = 'default';
+　　　　google_ad_section = 'section1 section2';
+      // -->
+      </script>
+      [ <script type="text/javascript" src="1.test_files/show_ads.js"></script><script src="1.test_files/show_ads_impl.js"></script><script src="1.test_files/test_domain.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><script language="JavaScript1.1" src="1.test_files/ads"></script> <h4><a href="http://www.google.com/url?ct=abg&amp;q=https://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://jobscale.at.webry.info/%26hl%3Dja%26client%3Dca-nec_radlinks_js%26gl%3DJP%26hideleadgen%3D1&amp;usg=AFQjCNFsWySF-dJT49c_hqGGNbbB3rHFnA" target="_blank">Ads by Google</a></h4>
+<a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=t&amp;google_kw=%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88&amp;google_rt=ChBNtwSfAAOA7QqkhYMaVmwQEhLjg4bjg7Pjg5fjg6zjg7zjg4gaCMWUuyodU-49KAFSEwjYuZqS3rqoAhUNhqQKHX1hyx4&amp;google_page_url=http://jobscale.at.webry.info/">テンプレート</a>
+<a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=t&amp;google_kw=%E7%94%BB%E5%83%8F&amp;google_rt=ChBNtwSfAAOA-gqkhYMaVmwQEgbnlLvlg48aCL6jVRKyBgQfKAFSEwjYuZqS3rqoAhUNhqQKHX1hyx4&amp;google_page_url=http://jobscale.at.webry.info/">画像</a>
+<a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=t&amp;google_kw=%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA&amp;google_rt=ChBNtwSfAAOA_gqkhYMaVmwQEhLjgqvjgrnjgr_jg57jgqTjgroaCD66pJciJCgDKAFSEwjYuZqS3rqoAhUNhqQKHX1hyx4&amp;google_page_url=http://jobscale.at.webry.info/">カスタマイズ</a>
+ ]
+      </td>
+      <td align="right">
+      <a href="http://jobscale.at.webry.info/">トップ</a>&nbsp;
+      <a href="http://profile.biglobe.ne.jp/id/jobscale/" target="_blank">プロフ</a>&nbsp;
+      <a href="http://jobscale.at.webry.info/friendlist.html">フレンド</a>&nbsp;
+      <a href="http://jobscale.at.webry.info/joincirclelist.html">サークル</a>
+      </td></tr>
+</tbody></table>
+
+
+  <!-- title banner start -->
+
+  <div id="banner">
+    <h1><a href="http://jobscale.at.webry.info/">jobscale blog</a></h1>
+
+    <!-- top links start -->
+    <script type="text/javascript">
+    <!--
+      topLinks();
+    // -->
+    </script><div id="top-links">	<a href="http://www.pal.or.jp/" target="_blank"><img src="1.test_files/char_palsystem1_logo.gif" alt="パルシステム"></a></div>
+    <!-- top links end -->
+
+<script language="JavaScript">
+<!--
+  loginButton("bblog.sso.biglobe.ne.jp/ap");
+// -->
+</script>
+
+  </div>
+  <!-- title banner end -->
+
+  <!-- counter start -->
+  <p id="counter"><img id="counterimg" src="1.test_files/Count.gif" alt="アクセスカウンタ" height="9"></p>
+  <!-- counter end -->
+
+  <!-- profile start -->
+  <table id="profile" cellspacing="0">
+  <tbody><tr>
+    <td><img src="1.test_files/NeetGokuu.png" alt="jobscale blog" width="177" height="200"></td>
+    <td width="100%">
+    <h2>プロフィール</h2>
+    <dl><dt>ブログ名</dt>
+      <dd>jobscale blog</dd>
+      <dt>ブログ紹介</dt>
+      <dd>気まぐれでいい加減な日記です
+        </dd>
+    </dl>
+    </td></tr>
+  </tbody></table>
+  <!-- profile end -->
+
+  	<!-- free space E08 -->
+
+  <!-- utilities2 start -->
+  <div id="utilities2" class="unvisible">
+      <script type="text/javascript" src="1.test_files/sidebar.js"></script>
+      <script type="text/javascript">
+      <!--
+        load_sidebar_info('jobscale.at.webry.info');
+      // -->
+      </script><script type="text/javascript" src="1.test_files/theme_category.js"></script>
+<script type="text/javascript" src="1.test_files/news_list.js"></script>
+<script type="text/javascript" src="1.test_files/include_comment_data.js"></script>
+<script type="text/javascript" src="1.test_files/include_trackback_data.js"></script>
+<script type="text/javascript" src="1.test_files/calendar.js"></script>
+<script type="text/javascript" src="1.test_files/album_data.js"></script>
+
+      <script type="text/javascript"><!--
+        include_compo_top_left(1);
+      // --></script><div id="calendar">
+      <h2>カレンダー</h2>      <table>      <caption>      &nbsp;&nbsp;&nbsp;&nbsp;      <a href="http://jobscale.at.webry.info/200804/index.html">&nbsp; 2008年 4月 &nbsp;</a>      &nbsp;&nbsp;&nbsp;&nbsp;      </caption>      <thead>      <tr><th>Su</th>        <th>Mo</th>        <th>Tu</th>        <th>We</th>        <th>Th</th>        <th>Fr</th>        <th>Sa</th></tr>      </thead>      <tbody>      <tr>        <td></td>        <td></td>        <td>1</td>        <td>2</td>        <td>3</td>        <td>4</td>        <td>5</td>      </tr>      <tr>        <td>6</td>        <td>7</td>        <td>8</td>        <td>9</td>        <td>10</td>        <td>11</td>        <td>12</td>      </tr>      <tr>        <td>13</td>        <td>14</td>        <td><a href="http://jobscale.at.webry.info/200804/index.html#0415">15</a></td>        <td>16</td>        <td><a href="http://jobscale.at.webry.info/200804/index.html#0417">17</a></td>        <td>18</td>        <td>19</td>      </tr>      <tr>        <td>20</td>        <td>21</td>        <td><a href="http://jobscale.at.webry.info/200804/index.html#0422">22</a></td>        <td>23</td>        <td><a href="http://jobscale.at.webry.info/200804/index.html#0424">24</a></td>        <td>25</td>        <td>26</td>      </tr>      <tr>        <td>27</td>        <td>28</td>        <td>29</td>        <td>30</td>      </tr></tbody>      </table>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(2);
+      // --></script><div id="newpost">
+<h2>ブログ 新着記事</h2><ul><li><a href="http://jobscale.at.webry.info/200804/article_7.html">ブログのURLです</a>　2008/04/24</li><li><a href="http://jobscale.at.webry.info/200804/article_5.html">いってやるぅ！</a>　2008/04/22</li><li><a href="http://jobscale.at.webry.info/200804/article_3.html">濡れた（。。；</a>　2008/04/17</li><li><a href="http://jobscale.at.webry.info/200804/article_2.html">はじめまして</a>　2008/04/15</li><li><a href="http://jobscale.at.webry.info/200804/article_1.html">はじめまして</a>　2008/04/15</li></ul>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(3);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(4);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(5);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(6);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(7);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(8);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(9);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(10);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(11);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(12);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(13);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(14);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(15);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(16);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(17);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(18);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(19);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top_left(20);
+      // --></script><div style="display: none;">
+
+      </div>
+  </div>
+  <!-- utilities2 end -->
+
+  <div id="contents">
+	<script type="text/javascript" src="1.test_files/themetab_data.js"></script>
+	<script type="text/javascript">
+	<!--
+		insertThemeTabAll('jobscale.at.webry.info');
+	// -->
+	</script>
+
+	<!-- free space E09 -->
+
+    <!-- postlist start -->
+    <div id="postlist">
+    <a href="javascript:void(0)" onclick="helpWin('general_cont.html#rss')"><img src="1.test_files/help.gif" alt="help" width="30" align="right" border="0" height="14" hspace="1"></a>
+    <a href="http://jobscale.at.webry.info/rss/index.rdf"><img src="1.test_files/rss.gif" alt="RSS" width="30" align="right" border="0" height="14" hspace="1"></a>
+    <br clear="all">
+
+	<!-- google_ad_section_start(name=section1) -->
+      <h2><a href="http://jobscale.at.webry.info/200804/article_7.html">ブログのURLです</a></h2>
+	<!-- google_ad_section_end(name=section1) -->
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr><td>
+        <div class="date">2008/04/24 03:05</div>
+	<!-- google_ad_section_start(name=section2) -->
+        <blockquote>
+          実は、こっちのブログは偽者で・・<br>
+ちゃんと自分で作ったのがあるんです。<br>
+ってことでお知らせです。<br>
+<a href="http://blogn.jobscale.ath.cx/" target="_blank">http://blogn.jobscale.ath.cx/</a>
+        </blockquote>
+	<!-- google_ad_section_end(name=section2) -->
+      </td></tr>
+      <tr><td class="response">
+        <a href="http://jobscale.at.webry.info/200804/article_7.html">記事へ</a> ｜
+              <a href="http://jobscale.at.webry.info/200804/article_7.html#kimochi">ブログ気持玉 0</a> /
+          <a href="http://jobscale.at.webry.info/200804/article_7.html#trackback">トラックバック 1</a> / <a href="http://jobscale.at.webry.info/200804/article_7.html#comment">コメント 0</a>
+        </td></tr>
+      </tbody></table>
+      <br><br>
+      <h2><a href="http://jobscale.at.webry.info/200804/article_5.html">いってやるぅ！</a></h2>
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr><td>
+        <div class="date">2008/04/22 13:34</div>
+        <blockquote>
+          今シーズンこそ、<span style="font-size: larger;"><span style="color: rgb(102, 153, 255);">富士登山</span></span>にいってやるぅ！<br>
+
+        </blockquote>
+      </td></tr>
+      <tr><td class="response">
+        <a href="http://jobscale.at.webry.info/200804/article_5.html">記事へ</a> ｜
+              <a href="http://jobscale.at.webry.info/200804/article_5.html#kimochi">ブログ気持玉 0</a> /
+          <a href="http://jobscale.at.webry.info/200804/article_5.html#trackback">トラックバック 1</a> / <a href="http://jobscale.at.webry.info/200804/article_5.html#comment">コメント 0</a>
+        </td></tr>
+      </tbody></table>
+      <br><br>
+      <h2><a href="http://jobscale.at.webry.info/200804/article_3.html">濡れた（。。；</a></h2>
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr><td>
+        <div class="date">2008/04/17 21:18</div>
+        <blockquote>
+          <table><tbody><tr><td><br>
+<div>銭湯に入ってさっぱりして、さぁうちに帰ろうと思ったときに雨が降り出し、ぐっしょり濡れてしまった；ｍ；<br><br>
+今日はシャンプーに「Dove」と洗濯洗剤に「アタックバイオジェル」を買った（・ｍ・ｂ</div><br>
+</td><td><br>
+<a href="http://userdisk.webry.biglobe.ne.jp/014/701/23/N000/000/000/NEC_0057.JPG" target="_blank"><img src="1.test_files/NEC_0057.JPG" alt="画像" class="up-image" title="画像を等倍で表示します" width="320" height="240"></a><br>
+</td></tr></tbody></table>
+        </blockquote>
+      </td></tr>
+      <tr><td class="response">
+        <a href="http://jobscale.at.webry.info/200804/article_3.html">記事へ</a> ｜
+          <a href="http://jobscale.at.webry.info/200804/article_3.html#kimochi">ブログ気持玉</a> /
+          <a href="http://jobscale.at.webry.info/200804/article_3.html#trackback">トラックバック</a> / <a href="http://jobscale.at.webry.info/200804/article_3.html#comment">コメント</a>
+        </td></tr>
+      </tbody></table>
+      <br><br>
+      <h2><a href="http://jobscale.at.webry.info/200804/article_2.html">はじめまして</a></h2>
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr><td>
+        <div class="date">2008/04/15 17:58</div>
+        <blockquote>
+          ウェブリブログはじめました<br>
+こんな人間ですがよろしくです。
+        </blockquote>
+      </td></tr>
+      <tr><td class="response">
+        <a href="http://jobscale.at.webry.info/200804/article_2.html">記事へ</a> ｜
+          <a href="http://jobscale.at.webry.info/200804/article_2.html#kimochi">ブログ気持玉</a> /
+          <a href="http://jobscale.at.webry.info/200804/article_2.html#trackback">トラックバック</a> / <a href="http://jobscale.at.webry.info/200804/article_2.html#comment">コメント</a>
+        </td></tr>
+      </tbody></table>
+      <br><br>
+      <h2><a href="http://jobscale.at.webry.info/200804/article_1.html">はじめまして</a></h2>
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr><td>
+        <div class="date">2008/04/15 17:57</div>
+        <blockquote>
+          <br>
+今日は天気がよかったらしい、一歩も外に出ていないので分かりません。
+        </blockquote>
+      </td></tr>
+      <tr><td class="response">
+        <a href="http://jobscale.at.webry.info/200804/article_1.html">記事へ</a> ｜
+              <a href="http://jobscale.at.webry.info/200804/article_1.html#kimochi">ブログ気持玉 0</a> /
+          <a href="http://jobscale.at.webry.info/200804/article_1.html#trackback">トラックバック 0</a> / <a href="http://jobscale.at.webry.info/200804/article_1.html#comment">コメント 9</a>
+        </td></tr>
+      </tbody></table>
+      <br><br>
+
+
+    </div>
+    <!-- postlist end -->
+
+    <!-- archives start -->
+    <div id="archives">
+      <h2>月別リンク</h2>
+      <ul>
+      <script type="text/javascript" src="1.test_files/monthly_link.js"></script>
+      <script type="text/javascript">
+      <!--
+        include_monthly_link_top(12);
+      // -->
+      </script><li><a href="http://jobscale.at.webry.info/200804/index.html">2008年4月</a></li>
+      </ul>
+    </div>
+    <!-- archives end -->
+
+	<!-- free space E10 -->
+
+  </div>
+  <!-- contents end -->
+
+
+  <!-- utilities start -->
+  <div id="utilities" class="unvisible">
+      <script type="text/javascript">
+      <!--
+      google_ad_client = 'ca-nec-cgm_js';
+      google_ad_output = 'js';
+      google_max_num_ads = 2;
+      google_safe = 'high';
+      google_language = 'ja';
+      google_encoding = 'sjis';
+      google_ad_section = 'section1 section2';
+      google_ad_type = 'text';
+
+      google_ad_channel = 'ad1';
+      // -->
+      </script>
+
+      <script type="text/javascript">
+      <!--
+      if(! (navigator.appVersion.charAt(0) <= 4 && navigator.appName.charAt(0) == "N"))
+        document.write('<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script\>');
+      function google_ad_request_done(google_ads) {
+        var i;
+        if( google_ads[0] ){
+document.write("<div class=\"g-ads\">");
+document.write("<h2><a href=\"" + google_info.feedback_url + "\" target=\"_blank\">Ads by Google</a></h2>");
+document.write("<ul>");
+        }
+
+	// GoogleAdsense
+        for(i = 0; i < google_ads.length; ++i) {
+          if (! google_ads[i] ) { break ; }
+document.write("<li id=\"abt\"><a href=\"" + google_ads[i].url + "\">");
+document.write("<span class=\"line1_abt\">" + google_ads[i].line1 + "</span></a><br />");
+document.write("<span class=\"line2\">" + google_ads[i].line2 + "&nbsp;" + google_ads[i].line3 + "</span><br />");
+document.write("<span class=\"url\"><a href=\"" + google_ads[i].url + "\">" + google_ads[i].visible_url + "</a></span></li>");
+        }
+
+        if( google_ads[0] ){
+document.write("</ul>");
+document.write("</div>");
+        }
+      }
+      // -->
+      </script><script type="text/javascript" src="1.test_files/show_ads.js"></script><script src="1.test_files/show_ads_impl.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><script language="JavaScript1.1" src="1.test_files/ads_002"></script><div class="g-ads"><h2><a href="http://www.google.com/url?ct=abg&amp;q=https://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://jobscale.at.webry.info/%26hl%3Dja%26client%3Dca-nec-cgm_js%26adU%3Dgoogle.co.jp/chrome%26adT%3DYouTube%2B%25E8%25A6%2596%25E8%2581%25B4%25E3%2582%2592%25E3%2582%25B9%25E3%2583%2594%25E3%2583%25BC%25E3%2583%2589%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%26adU%3Dbiowashball.jp%26adT%3D%25E3%2582%25B9%25E3%2582%25A4%25E3%2582%25B9%25E3%2581%2586%25E3%2581%25BE%25E3%2582%258C%25E3%2581%25AE%25E6%25B4%2597%25E6%25BF%25AF%25E3%2583%259C%25E3%2583%25BC%25E3%2583%25AB%26gl%3DJP%26hideleadgen%3D1&amp;usg=AFQjCNEFSNgRr3EevGI69lLOggfcHHb7SQ" target="_blank">Ads by Google</a></h2><ul><li id="abt"><a href="http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=B0kAgpQS3TcjIG4OMkgWZsv2nAcn-qoMC8bmPkRjRtbjPVfDYbxABGAEg47X4EigCOABQto7m3fr_____AWCJs4uO9BOgAe_zyPYDsgEWam9ic2NhbGUuYXQud2VicnkuaW5mb7oBATDIAQHaAR5odHRwOi8vam9ic2NhbGUuYXQud2VicnkuaW5mby_AAgGoAwHoA_gD9QMIAADE&amp;num=1&amp;sig=AGiWqtwUk10VpWqfkqdL9PGBDyoxINW0YQ&amp;client=ca-nec-cgm_js&amp;adurl=http://www.google.co.jp/chrome%3Fbanner%3Dyt%26brand%3DCHMD%26variation%3Dha"><span class="line1_abt">YouTube 視聴をスピードアップ</span></a><br><span class="line2">Google が開発した無料ソフト&nbsp;"Chrome"でストレス無いYouTube 動画閲覧</span><br><span class="url"><a href="http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=B0kAgpQS3TcjIG4OMkgWZsv2nAcn-qoMC8bmPkRjRtbjPVfDYbxABGAEg47X4EigCOABQto7m3fr_____AWCJs4uO9BOgAe_zyPYDsgEWam9ic2NhbGUuYXQud2VicnkuaW5mb7oBATDIAQHaAR5odHRwOi8vam9ic2NhbGUuYXQud2VicnkuaW5mby_AAgGoAwHoA_gD9QMIAADE&amp;num=1&amp;sig=AGiWqtwUk10VpWqfkqdL9PGBDyoxINW0YQ&amp;client=ca-nec-cgm_js&amp;adurl=http://www.google.co.jp/chrome%3Fbanner%3Dyt%26brand%3DCHMD%26variation%3Dha">google.co.jp/chrome</a></span></li><li id="abt"><a href="http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BK1sQpQS3TcjIG4OMkgWZsv2nAdLLroUC6tC41yLAjbcBwJTeDxACGAIg47X4EigCOABQyeWHjQFgibOLjvQTsgEWam9ic2NhbGUuYXQud2VicnkuaW5mb7oBATDIAQHaAR5odHRwOi8vam9ic2NhbGUuYXQud2VicnkuaW5mby-AAgGpAq7wyXxPR0o-qAMB6AP4A_UDCAAAxA&amp;num=2&amp;sig=AGiWqtysR-9uIwysSqc-IpoomiglSt11sw&amp;client=ca-nec-cgm_js&amp;adurl=http://www.biowashball.jp"><span class="line1_abt">スイスうまれの洗濯ボール</span></a><br><span class="line2">もう洗剤は必要ありません。&nbsp;これ１つで真っ白、ふんわりお洗濯</span><br><span class="url"><a href="http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BK1sQpQS3TcjIG4OMkgWZsv2nAdLLroUC6tC41yLAjbcBwJTeDxACGAIg47X4EigCOABQyeWHjQFgibOLjvQTsgEWam9ic2NhbGUuYXQud2VicnkuaW5mb7oBATDIAQHaAR5odHRwOi8vam9ic2NhbGUuYXQud2VicnkuaW5mby-AAgGpAq7wyXxPR0o-qAMB6AP4A_UDCAAAxA&amp;num=2&amp;sig=AGiWqtysR-9uIwysSqc-IpoomiglSt11sw&amp;client=ca-nec-cgm_js&amp;adurl=http://www.biowashball.jp">biowashball.jp</a></span></li></ul></div>
+
+
+      <div id="sidenews"></div>
+
+      <script type="text/javascript" src="1.test_files/sidebar.js"></script>
+      <script type="text/javascript">
+      <!--
+        load_sidebar_info('jobscale.at.webry.info');
+      // -->
+      </script><script type="text/javascript" src="1.test_files/theme_category.js"></script>
+<script type="text/javascript" src="1.test_files/news_list.js"></script>
+<script type="text/javascript" src="1.test_files/include_comment_data.js"></script>
+<script type="text/javascript" src="1.test_files/include_trackback_data.js"></script>
+<script type="text/javascript" src="1.test_files/calendar.js"></script>
+<script type="text/javascript" src="1.test_files/album_data.js"></script>
+
+      <script type="text/javascript"><!--
+        include_compo_top(1);
+      // --></script><div id="categories">
+<h2>ブログ テーマ</h2><ul></ul>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(2);
+      // --></script><div id="newtbk">
+<h2>新着トラックバック</h2><ul><li><a href="http://jobscale.at.webry.info/200804/article_7.html">ブログのURLです(jobscale page) 2008/07/01</a></li><li><a href="http://jobscale.at.webry.info/200804/article_5.html">いってやるぅ！(jobscale blog) 2008/04/22</a></li></ul>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(3);
+      // --></script><div id="newcmt">
+<h2>新着コメント</h2><ul><li><a href="http://jobscale.at.webry.info/200804/article_1.html">はじめまして(詩音) 2009/09/05</a></li><li><a href="http://jobscale.at.webry.info/200804/article_1.html">はじめまして(えりりん) 2009/08/21</a></li><li><a href="http://jobscale.at.webry.info/200804/article_1.html">はじめまして(なちゅ) 2009/08/14</a></li><li><a href="http://jobscale.at.webry.info/200804/article_1.html">はじめまして(なみぽむ) 2009/07/31</a></li><li><a href="http://jobscale.at.webry.info/200804/article_1.html">はじめまして(あいり) 2009/07/17</a></li></ul>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(4);
+      // --></script><div id="freespace">
+<a href="http://jobscale.ath.cx/">このひとのホームページ</a>
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(5);
+      // --></script><div id="freespace2">
+<style type="text/css">#freespace2{  display: none;  }</style>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(6);
+      // --></script><div id="amazonaffiliate" style="text-align: center;"><style type="text/css">#amazonaffiliate{  display: none;  }</style>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(7);
+      // --></script><div id="message">
+<style type="text/css">#message{  display: none;  }</style>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(8);
+      // --></script><div id="qrcode">
+<style type="text/css">#qrcode{  display: none;  }</style>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(9);
+      // --></script><div id="rakutenaffiliate" style="text-align: center;">
+<style type="text/css">#rakutenaffiliate{  display: none;  }</style>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(10);
+      // --></script><div id="nicotto">
+<style type="text/css">#nicotto{  display: none;  }</style>
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(11);
+      // --></script><div id="search_window">
+<h2>サイト内検索</h2>
+<div style="text-align: center;">
+<form target="_brank" name="search" action="http://cgi.search.biglobe.ne.jp/cgi-bin/search-blog2" method="get">
+<input value="検索" name="c" type="hidden">
+<input value="1" name="clid" type="hidden">
+<input size="25" name="q" type="text"><br>
+<input value="検索" name="btn" type="submit">
+<input checked="checked" value="jobscale.at.webry.info" name="sitesearch" id="s1" type="radio">
+<font size="-2"><label for="s1">サイト内</label></font>
+<input value="" name="sitesearch" id="s2" type="radio">
+<font size="-2"><label for="s2">ウェブ</label></font>
+</form>
+</div>
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(12);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(13);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(14);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(15);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(16);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(17);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(18);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(19);
+      // --></script><div style="display: none;">
+
+      </div>
+      <script type="text/javascript"><!--
+        include_compo_top(20);
+      // --></script><div style="display: none;">
+
+      </div>
+    <!-- side image start -->
+    <div id="side-image"></div>
+    <!-- side image end -->
+
+  </div>
+  <!-- utilities end -->
+  <div class="ns-bg"></div>
+
+	<!-- free space E11 -->
+
+<div align="center">jobscale blog/BIGLOBEウェブリブログ</div>
+  <div id="linkunit" align="center">
+      <script type="text/javascript">
+      <!--
+		var firstView = true;
+		function google_ad_request_done(ads) {}
+		function google_radlink_request_done(radlinks) {
+			if (firstView) {
+				firstView = false;
+				if (radlinks.length < 1) {
+					document.write(' <a href="http://webryblog.biglobe.ne.jp/campaign/">ウェブリブログのキャンペーンに応募しよう！</a> ');
+					return;
+				}
+				document.write("<h4><a href=\"" + google_info.feedback_url + "\" target=\"_blank\">Ads by Google</a></h4>\n");
+				for(i=0; i < radlinks.length; ++i) {
+					document.write(' <a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=b&google_kw=' + radlinks[i].url_escaped_term + '&google_rt=' + radlinks[i].radlink_token + '&google_page_url=' + window.location + '">' + radlinks[i].term + '</a>\n');
+				}
+			}
+		}
+      // -->
+      </script>
+    <script type="text/javascript">
+      <!--
+　　　　google_ad_client = "ca-nec_radlinks_js";
+　　　　google_ad_channel = 'bottom';
+　　　　google_page_url = '';
+　　　　google_language = 'ja';
+　　　　google_encoding = 'sjis';
+　　　　google_ad_output = 'js';
+　　　　google_safe = 'high';
+　　　　google_num_radlinks = '3';
+　　　　google_max_radlink_len = '20';
+　　　　google_max_num_ads = '0';
+　　　　google_rl_mode = 'default';
+　　　　google_ad_section = 'section1 section2';
+      // -->
+    </script>
+      [ <script type="text/javascript" src="1.test_files/show_ads.js"></script><script src="1.test_files/show_ads_impl.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><script language="JavaScript1.1" src="1.test_files/ads_003"></script><h4><a href="http://www.google.com/url?ct=abg&amp;q=https://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://jobscale.at.webry.info/%26hl%3Dja%26client%3Dca-nec_radlinks_js%26gl%3DJP%26hideleadgen%3D1&amp;usg=AFQjCNFsWySF-dJT49c_hqGGNbbB3rHFnA" target="_blank">Ads by Google</a></h4>
+ <a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=b&amp;google_kw=%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88&amp;google_rt=ChBNtwSxAAzDKAqkNtAj5F7nEhLjg4bjg7Pjg5fjg6zjg7zjg4gaCGD9tbF7slgKKAFSEwiikYib3rqoAhXPgqQKHe1sSgs&amp;google_page_url=http://jobscale.at.webry.info/">テンプレート</a>
+ <a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=b&amp;google_kw=%E7%94%BB%E5%83%8F&amp;google_rt=ChBNtwSxAAzDNwqkNtAj5F7nEgbnlLvlg48aCFL1tbDy9hitKAFSEwiikYib3rqoAhXPgqQKHe1sSgs&amp;google_page_url=http://jobscale.at.webry.info/">画像</a>
+ <a target="_top" href="http://map.bblog.biglobe.ne.jp/ap/tool/show_ads.jsp?ch=b&amp;google_kw=%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA&amp;google_rt=ChBNtwSxAAzDOgqkNtAj5F7nEhLjgqvjgrnjgr_jg57jgqTjgroaCMt134irjrn_KAFSEwiikYib3rqoAhXPgqQKHe1sSgs&amp;google_page_url=http://jobscale.at.webry.info/">カスタマイズ</a>
+ ]
+  </div>
+
+</div>
+<!-- main area end -->
+
+<!-- footer start -->
+<div id="footer" style="display: block; visibility: visible;">
+  <!-- links start -->
+  <div id="links" style="display: block; visibility: visible; width: 100%;">
+    <a href="http://webryblog.biglobe.ne.jp/">ウェブリブログ(ブログ 無料)</a> ｜
+    <a href="http://www.biglobe.ne.jp/">BIGLOBEトップ</a> ｜
+    <a href="http://news.biglobe.ne.jp/">ニュース</a> ｜
+    <a href="http://house.biglobe.ne.jp/">住宅情報</a> ｜
+    <a href="http://webryblog.biglobe.ne.jp/nicotto/"><img style="margin-right: 3px; border: 0pt none;" src="1.test_files/nicotto_20x20.gif" width="20" align="absmiddle" height="20">ニコッとタウン</a> ｜
+    <a href="http://join.biglobe.ne.jp/index.html">入会案内</a>
+    <!-- footer link start -->
+    <script type="text/javascript">
+    <!--
+      footerLink();
+    // -->
+    </script><div style="margin-top: 5px;"><a href="http://webryblog.biglobe.ne.jp/nicotto/"><img src="1.test_files/nicotto_20x20.gif" style="margin-right: 3px; border: 0pt none;" width="20" align="absmiddle" height="20">もう１人の自分で、のんびり仮想生活をはじめよう！</a></div>
+    <!-- footer link end -->
+  </div>
+  <!-- links end -->
+
+  <!-- powered start -->
+  <div id="sbanner" style="display: block; visibility: visible;">
+    <!-- copyright start -->
+    <script type="text/javascript">
+    <!--
+      footCopyright();
+    // -->
+    </script><div id="copyright" style="display: block; visibility: visible;"></div>
+    <!-- copyright end -->
+
+    <a href="http://webryblog.biglobe.ne.jp/" style="display: block; visibility: visible; width: 190px; height: 30px;"><img src="1.test_files/sbanner-m.gif" alt="ウェブリブログ：高機能ブログを無料で！" style="display: block; visibility: visible; width: 190px; height: 30px;" width="190" height="30"></a>
+  </div>
+  <!-- powered end -->
+</div>
+<!-- footer end -->
+
+	<!-- free space E12 -->
+
+<!-- beacon start -->
+<img src="1.test_files/a_002.gif" width="1" height="1">
+<img src="1.test_files/a_004.gif" alt="" style="display: none;" width="1" height="1">
+<img src="1.test_files/a_003.gif" width="1" height="1">
+<img src="1.test_files/a.gif" width="1" height="1">
+<!-- beacon end -->
+
+</body></html>

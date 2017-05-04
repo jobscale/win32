@@ -1,0 +1,7 @@
+/*
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+Ext.ux.ToolbarDroppable=Ext.extend(Object,{constructor:function(a){Ext.apply(this,a,{})},init:function(a){this.toolbar=a;this.toolbar.on({scope:this,render:this.createDropTarget})},createDropTarget:function(){this.dropTarget=new Ext.dd.DropTarget(this.toolbar.getEl(),{notifyOver:this.notifyOver.createDelegate(this),notifyDrop:this.notifyDrop.createDelegate(this)})},addDDGroup:function(a){this.dropTarget.addToGroup(a)},calculateEntryIndex:function(g){var i=0,j=this.toolbar,h=j.items.items,d=h.length,c=j.getEl().getXY()[0],b=g.getXY()[0]-c;for(var f=0;f<d;f++){var l=h[f],a=l.getEl().getWidth(),k=c+a/2;c+=a;if(b<k){i=f;break}else{i=f+1}}return i},canDrop:function(a){return true},notifyOver:function(a,b,c){return this.canDrop.apply(this,arguments)?this.dropTarget.dropAllowed:this.dropTarget.dropNotAllowed},notifyDrop:function(a,d,e){var c=this.canDrop(a,d,e),f=this.toolbar;if(c){var b=this.calculateEntryIndex(d);f.insert(b,this.createItem(e));f.doLayout();this.afterLayout()}return c},createItem:function(a){throw new Error("The createItem method must be implemented in the ToolbarDroppable plugin")},afterLayout:Ext.emptyFn});

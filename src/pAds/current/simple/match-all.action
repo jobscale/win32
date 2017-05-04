@@ -1,0 +1,44 @@
+{ \
++server-header-tagger{javascript-requests} \
++server-header-tagger{flash-requests} \
++server-header-tagger{dlfile-requests} \
++server-header-tagger{audio-requests} \
++server-header-tagger{video-requests} \
++server-header-tagger{xml-requests} \
++server-header-tagger{image-requests} \
++server-header-tagger{css-requests} \
++filter{ana_a} \
++filter{del_d} \
++filter{pad_s} \
++filter{adl_s} \
++add-header{CONNECTION: Keep-Alive} \
+}
+/ # Match all URLs
+
+#############################################################################
+# Always Don't filter
+#############################################################################
+{-filter}
+TAG:^JAVASCRIPT-REQUEST$
+TAG:^IMAGE-REQUEST$
+TAG:^CSS-REQUEST$
+TAG:^CSS-REQUEST$
+TAG:^FLASH-REQUEST$
+TAG:^DLFILE-REQUEST$
+TAG:^AUDIO-REQUEST$
+TAG:^VIDEO-REQUEST$
+TAG:^XML-REQUEST$
+
+# Inside 
+pad.plustar.jp/*
+pl.plustar.jp/*
+x.plustar.jp/*
+ad.plustar.jp/*
+ac.plustar.jp/*
+
+# user
+runsystem.co.jp/*
+*.runsystem.co.jp/*
+
+# Script error 
+# *.*.doubleclick.net/*

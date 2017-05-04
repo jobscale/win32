@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\pLicMaker.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PLICMAKER_DIALOG DIALOGEX 0, 0, 239, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_LEFTSCROLLBAR | WS_EX_APPWINDOW
+CAPTION "Plustar ExTrapper ライセンス作成"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,53,7,180,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,53,35,180,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,53,63,180,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,53,81,180,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO2,53,108,180,88,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,53,135,180,88,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT4,53,154,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "作成",IDC_BUTTON2,73,190,50,14
+    PUSHBUTTON      "デコード",IDC_BUTTON3,127,190,50,14
+    PUSHBUTTON      "終了",IDC_BUTTON1,182,190,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON4,73,206,50,14
+    LTEXT           "店舗名：",IDC_STATIC,25,11,25,8
+    LTEXT           "店舗コード：",IDC_STATIC,16,37,34,8
+    LTEXT           "クライアント数：",IDC_STATIC,10,66,40,8
+    LTEXT           "有効期限：",IDC_STATIC,19,84,32,8
+    LTEXT           "サービスコード：",IDC_STATIC,10,110,41,8
+    LTEXT           "ライセンス：",IDC_STATIC,21,138,30,8
+    LTEXT           "結果：",IDC_STATIC,33,156,18,8
+    LTEXT           "文字列：",IDC_STATIC,26,174,25,8
+    LTEXT           "店舗名(社名) の形式が望ましい",IDC_STATIC,52,23,90,8
+    LTEXT           "店舗コードは大文字英語10文字以内",IDC_STATIC,53,51,68,8
+    LTEXT           "YYYYMMDD形式(例：20100101)",IDC_STATIC,53,96,92,8
+    LTEXT           "有効期限：",IDC_STATIC,148,96,32,8
+    LTEXT           "0",IDC_STATIC_EXP_DAYS,179,96,16,8
+    LTEXT           "業種を表す",IDC_STATIC,54,123,32,8
+    EDITTEXT        IDC_EDIT6,53,172,180,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "読み込み",IDC_BUTTON5,127,206,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PLICMAKER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\pLicMaker.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

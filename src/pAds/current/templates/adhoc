@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<script>
+
+str = document.URL;
+re = new RegExp("ps_url=", "i");
+fi = str.search(re);
+if (fi != -1) {
+  url = str.substr(fi + 7);
+  if (url.length != 0) {
+    document.write('<img src="http://x.plustar.jp/cph.gif?'+(new Date().getTime())+'" >');
+    location.href = url;
+  }
+}
+
+</script>

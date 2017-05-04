@@ -1,0 +1,23 @@
+/*! Copyright(C) 2006-2011 Plustar co.,LTD All Rights Reserved. */
+/* 広告表示モジュール */
+if (typeof PSHOWSDK == "undefined") {
+    PSHOWSDK = {};
+}
+if (typeof PSHOWSDK.Util == "undefined") {
+    PSHOWSDK.Util = {};
+}
+PSHOWSDK.Util.closePlustarAds  = function(){
+    var pslab_s = "plustar_show_ad_frame";
+    var pslab_j = pslab$("#" + pslab_s);
+    var divHeight = 90;
+    setTimeout(function(){
+          pslab$(pslab_j).fadeOut(150,function(){
+              pslab$(pslab_j).remove();
+          });
+    },10);
+    setTimeout(function(){
+      location.reload();
+    },5000);
+};
+(function() {
+})();

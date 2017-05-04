@@ -1,0 +1,188 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PPOPMAKER           ICON                    "pPopMaker.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_PPOPMAKER MENU 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "アプリケーションの終了(&X)",             IDM_EXIT
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "バージョン情報(&A)...",              IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_PPOPMAKER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 161, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "Plustar PopUpMaker バージョン情報"
+FONT 9, "MS UI Gothic", 0, 0, 0x0
+BEGIN
+    ICON            IDI_PPOPMAKER,IDC_MYICON,14,9,20,20
+    LTEXT           "Plustar pPopMaker Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyrightc 2006-2010 Plustar co.,LTD All Rights Reserved.",IDC_STATIC,40,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,123,32,30,11,WS_GROUP
+END
+
+IDD_POPUPDIALOG DIALOGEX 0, 0, 347, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Plustar ExTrapper ポップアップメーカー"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_DISP_TIME,61,7,50,56,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DISP_COLOR,61,24,50,58,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_WIDTH,61,41,38,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_WIDTH,"msctls_updown32",UDS_ARROWKEYS,95,43,6,11
+    EDITTEXT        IDC_EDIT_HEIGHT,113,41,36,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_HEIGHT,"msctls_updown32",UDS_ARROWKEYS,145,43,6,11
+    EDITTEXT        IDC_EDIT_URL,61,56,277,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MSG,61,73,277,83,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "テスト",IDTEST,128,162,50,14
+    DEFPUSHBUTTON   "送信",IDOK,182,162,50,14
+    DEFPUSHBUTTON   "初期値",ID_RESET,236,162,50,14
+    LTEXT           "表示時間[秒]：",IDC_STATIC,9,10,50,8
+    LTEXT           "ボックスカラー：",IDC_STATIC,14,26,46,8
+    LTEXT           "URL：",IDC_STATIC,42,58,18,8
+    LTEXT           "メッセージ：",IDC_STATIC,25,73,35,8
+    PUSHBUTTON      "キャンセル",IDCANCEL,290,162,50,14
+    ICON            IDI_PPOPMAKER,IDC_MYICON2,132,10,21,20
+    LTEXT           "Plustar ExTrapper ポップアップメーカー\r\nクライアントにメッセージ送信",IDC_STATIC,158,13,173,20
+    LTEXT           "サイズ：",IDC_STATIC,35,43,24,8
+    LTEXT           "×",IDC_STATIC,103,43,8,8
+    LTEXT           "縦(ピクセル)×横(ピクセル)",IDC_STATIC,156,43,82,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 159
+    END
+
+    IDD_POPUPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+        HORZGUIDE, 41
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "pPopMaker"
+    IDC_PPOPMAKER           "PPOPMAKER"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
